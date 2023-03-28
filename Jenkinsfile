@@ -4,7 +4,7 @@ agent any
     stage('Build ec2') {
       steps {
         sh "terraform init"
-        sh "terraform apply -auto -approve"
+        sh "terraform apply -auto-approve"
       }
     }
   }
